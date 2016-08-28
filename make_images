@@ -110,5 +110,10 @@ convert -define png:compression-filter=3 -define png:compression-level=9 10d.png
 convert -define png:compression-filter=3 -define png:compression-level=9 30d.png 30d.png
 convert -define png:compression-filter=3 -define png:compression-level=9 1y.png  1y.png
 
-python LeoNTP-stats-full.py > ntp1_stats.php
+python LeoNTP-stats-full.py > ntp_status.txt
 
+lead='^<!-- NTP STATUS BEGINS -->$'
+tail='^<!-- NTP STATUS ENDS -->$'
+status=$(sed -e "/$lead/,/$tail/{ /$lead/{p; r ntp_status.txt
+        }; /$tail/p; d }"  index.html)
+echo "$status" > index.html
