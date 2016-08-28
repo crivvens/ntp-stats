@@ -112,12 +112,3 @@ convert -define png:compression-filter=3 -define png:compression-level=9 1y.png 
 
 python LeoNTP-stats-full.py > ntp1_stats.php
 
-curl -s -T ntp1_stats.php  ftp://ftp.leobodnar.com --user xxxxx:yyyyy
-
-curl -s -T 20m.png ftp://ftp.leobodnar.com --user xxxxx:yyyyy
-curl -s -T 2h.png  ftp://ftp.leobodnar.com --user xxxxx:yyyyy
-curl -s -T 12h.png ftp://ftp.leobodnar.com --user xxxxx:yyyyy
-curl -s -T 48h.png ftp://ftp.leobodnar.com --user xxxxx:yyyyy
-curl -s -T 10d.png ftp://ftp.leobodnar.com --user xxxxx:yyyyy
-curl -s -T 30d.png ftp://ftp.leobodnar.com --user xxxxx:yyyyy
-curl -s -T 1y.png  ftp://ftp.leobodnar.com --user xxxxx:yyyyy
