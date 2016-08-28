@@ -7,26 +7,6 @@
 <a href="http://www.pool.ntp.org/scores/185.75.123.35">ntp.suws.org.uk</a> public <a href="http://store.uputronics.com/index.php?route=product/product&product_id=92">LeoNTP</a> server statistics.  Timezone is UTC+1<br><br>
 
 <!-- NTP STATUS BEGINS -->
-UTC time: 2016-08-28 23:07:01
-<br>
-NTP time: 3681414421
-<br>
-Average load since restart: 07 requests per second
-<br>
-NTP requests served: 580571
-<br>
-Mode 6 requests served: 14
-<br>
-Uptime: 77627 seconds ( 0 days )
-<br>
-GPS lock time: 77611 seconds ( 0 days )
-<br>
-Active satellites: 16
-<br>
-Firmware version: 1.09
-<br>
-Serial number: 117
-<br>
 <!-- NTP STATUS ENDS -->
 <br>	
 20 minutes traffic, 1 second average:<br>

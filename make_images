@@ -114,6 +114,5 @@ python LeoNTP-stats-full.py > ntp_status.txt
 
 lead='^<!-- NTP STATUS BEGINS -->$'
 tail='^<!-- NTP STATUS ENDS -->$'
-status=$(sed -e "/$lead/,/$tail/{ /$lead/{p; r ntp_status.txt
-        }; /$tail/p; d }"  index.html)
-echo "$status" > index.html
+sed -e "/$lead/,/$tail/{ /$lead/{p; r ntp_status.txt
+        }; /$tail/p; d }"  index.html-template > index.html
